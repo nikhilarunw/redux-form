@@ -3,7 +3,7 @@
   "version": "5.3.6",
   "description": "A higher order component decorator for forms using Redux and React",
   "main": "./lib/index.js",
-  "jsnext:main": "./src/index.js",
+  "jsnext:main": "./es/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/erikras/redux-form"
@@ -11,6 +11,7 @@
   "scripts": {
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "build:lib": "babel src --out-dir lib",
+    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es --ignore __tests__",
     "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/redux-form.js",
     "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/redux-form.min.js",
     "clean": "rimraf dist lib",
@@ -39,6 +40,7 @@
   },
   "homepage": "https://github.com/erikras/redux-form",
   "dependencies": {
+    "babel-preset-es2015-no-commonjs": "0.0.2",
     "deep-equal": "^1.0.1",
     "hoist-non-react-statics": "^1.0.5",
     "invariant": "^2.0.0",
