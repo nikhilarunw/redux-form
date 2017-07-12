@@ -1,0 +1,17 @@
+export var ADD_ARRAY_VALUE = 'redux-form/ADD_ARRAY_VALUE';
+export var AUTOFILL = 'redux-form/AUTOFILL';
+export var BLUR = 'redux-form/BLUR';
+export var CHANGE = 'redux-form/CHANGE';
+export var DESTROY = 'redux-form/DESTROY';
+export var FOCUS = 'redux-form/FOCUS';
+export var INITIALIZE = 'redux-form/INITIALIZE';
+export var REMOVE_ARRAY_VALUE = 'redux-form/REMOVE_ARRAY_VALUE';
+export var RESET = 'redux-form/RESET';
+export var START_ASYNC_VALIDATION = 'redux-form/START_ASYNC_VALIDATION';
+export var START_SUBMIT = 'redux-form/START_SUBMIT';
+export var STOP_ASYNC_VALIDATION = 'redux-form/STOP_ASYNC_VALIDATION';
+export var STOP_SUBMIT = 'redux-form/STOP_SUBMIT';
+export var SUBMIT_FAILED = 'redux-form/SUBMIT_FAILED';
+export var SWAP_ARRAY_VALUES = 'redux-form/SWAP_ARRAY_VALUES';
+export var TOUCH = 'redux-form/TOUCH';
+export var UNTOUCH = 'redux-form/UNTOUCH';
